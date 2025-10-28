@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Heaven Food — Pure Veg Indian Cuisine</title>
+  <meta name="description" content="Heaven Food — 100% Pure Veg Indian Restaurant serving authentic flavors, fresh ingredients, and warm hospitality." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" /
+  >
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">🥗</div>
+        <div>
+          <h1>Heaven Food</h1>
+          <p class="tag">100% Pure Veg • Authentic Indian Taste</p>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#specials">Chef's Specials</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reserve">Reserve</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h2>Welcome to Heaven Food</h2>
+        <p>Enjoy traditional Indian vegetarian dishes made with love and purity. Every bite brings the freshness of home-cooked food and the aroma of Indian spices.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#reserve">Reserve a Table</a>
+          <a class="btn outline" href="#menu">See Our Menu</a>
+        </div>
+      </div>
+      <div class="hero-image" aria-hidden="true">
+        <img src="image.png" alt="Delicious vegetarian Indian food" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="container section">
+    <h3>Our Menu</h3>
+    <p class="muted">Fresh, healthy, and purely vegetarian dishes crafted with authentic Indian flavors.</p>
+
+    <div class="cards">
+      <article class="card">
+        <h4>Paneer Butter Masala</h4>
+        <p class="muted">Soft paneer cubes in creamy tomato gravy with rich spices.</p>
+        <div class="price">₹180</div>
+      </article>
+
+      <article class="card">
+        <h4>Chole Bhature</h4>
+        <p class="muted">Spicy chickpea curry served with fluffy bhature.</p>
+        <div class="price">₹140</div>
+      </article>
+
+      <article class="card">
+        <h4>Masala Dosa</h4>
+        <p class="muted">Crispy rice dosa stuffed with spiced potato filling.</p>
+        <div class="price">₹120</div>
+      </article>
+<article class="card">
+        <h4>Pizza</h4>
+        <p class="muted">diffrent kind of Pizza's available.</p>
+        <div class="price">₹120</div>
+      </article>
+
+      <article class="card">
+  <h4>Pulao</h4>
+  <p class="muted">Aromatic basmati rice cooked with fresh vegetables and mild Indian spices.</p>
+  <div class="price">₹200</div>
+</article>
+
+      <article class="card">
+        <h4>Dal Tadka</h4>
+        <p class="muted">Yellow lentils tempered with ghee, garlic and cumin.</p>
+        <div class="price">₹130</div>
+      </article>
+
+      <article class="card">
+        <h4>Gulab Jamun</h4>
+        <p class="muted">Soft milk balls soaked in warm sugar syrup.</p>
+        <div class="price">₹70</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Specials -->
+  <section id="specials" class="container section">
+    <h3>Chef's Specials</h3>
+    <div class="grid-2">
+      <div class="special">
+        <img src="image copy.png" alt="Chef special" />
+      </div>
+      <div>
+        <h4>Royal Veg Thali</h4>
+        <p class="muted">A wholesome Indian platter with roti, sabzi, dal, rice, salad and dessert.</p>
+        <ul class="checklist">
+          <li>Made fresh daily</li>
+          <li>Includes 6+ authentic dishes</li>
+          <li>Served with love and ghee</li>
+        </ul>
+        <a class="btn primary" href="#reserve">Book Your Thali</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="container section">
+    <h3>Gallery</h3>
+    <div class="gallery">
+      <img src="360_F_582286506_Kji3X5NrZBHMTFSqwG9gADXWMsjrtEjL.jpg" alt="Paneer Dish">
+      <img src="traditional-indian-thali-presenting-various-dishes-round-tray-metal-food-like-rice-naan-bread-paneer-sauces-composing-365700812.webp" alt="Thali">
+      <img src="" alt="South Indian Food">
+      <img src="" alt="Dessert">
+    </div>
+  </section>
+
+  <!-- Reservation -->
+  <section id="reserve" class="container section">
+    <h3>Reserve a Table</h3>
+    <p class="muted">Fill out the form and we will confirm your table soon.</p>
+
+    <form id="reserveForm" class="form-grid" novalidate>
+      <div class="form-field">
+        <label for="rname">Full Name</label>
+        <input id="rname" type="text" placeholder="Your name" required>
+      </div>
+      <div class="form-field">
+        <label for="rphone">Phone</label>
+        <input id="rphone" type="tel" placeholder="+91 9XXXXXXXXX" required>
+      </div>
+      <div class="form-field">
+        <label for="remail">Email</label>
+        <input id="remail" type="email" placeholder="you@example.com">
+      </div>
+      <div class="form-field">
+        <label for="rpeople">People</label>
+        <input id="rpeople" type="number" min="1" max="20" value="2" required>
+      </div>
+      <div class="form-field">
+        <label for="rdate">Date</label>
+        <input id="rdate" type="date" required>
+      </div>
+      <div class="form-field">
+        <label for="rtime">Time</label>
+        <input id="rtime" type="time" required>
+      </div>
+      <div class="form-field full">
+        <label for="rmessage">Message (optional)</label>
+        <textarea id="rmessage" rows="3" placeholder="Any special requests"></textarea>
+      </div>
+      <div class="form-field full actions">
+        <button type="submit" class="btn primary">Request Reservation</button>
+        <p id="reserveMsg" class="form-msg"></p>
+      </div>
+    </form>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container section">
+    <h3>Contact & Location</h3>
+    <div class="grid-2">
+      <div>
+        <p><strong>Address:</strong> 12 Veg Street, Titli Park, Raisen</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Email:</strong> hello@heavenfood.in</p>
+        <p><strong>Hours:</strong> Daily 11:00 AM – 10:30 PM</p>
+      </div>
+      <div class="map-wrap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18..." style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Heaven Food • Pure Veg • All rights reserved</p>
+    </div>
+  </footer>
+</body>
+</html>
